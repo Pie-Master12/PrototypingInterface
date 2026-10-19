@@ -1,0 +1,26 @@
+/* General stuff that is constant between devices*/
+.list-item-body {
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    border-radius: 1%;
+    text-align: justify;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+
+
+/* Create the layout for different screen sizes */
+@media screen and (width >= 27rem) {
+    .list-item-body {
+        height: 15%;
+    }
+} 
+
+@media screen and (width < 27rem) {
+    .list-item-body {
+        height: 30%;
+    }
+}

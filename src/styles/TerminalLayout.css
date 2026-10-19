@@ -1,0 +1,26 @@
+/* General stuff that is constant between devices*/
+.terminal-option-block {
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+}
+
+
+/* Create the layout for different screen sizes */
+@media screen and (width >= 27rem) {
+    .terminal-information-block {
+        height: 80%;
+    }
+    .terminal-option-block {
+        height: 20%;
+    }
+} 
+
+@media screen and (width < 27rem) {
+    .terminal-information-block {
+        height: 60%;
+    }
+    .terminal-option-block {
+        height: 40%;
+    }
+}
